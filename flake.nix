@@ -5,7 +5,7 @@
     nixpkgs.url = "nixpkgs/nixos-24.11";
     nixpkgs-unstable.url = "nixpkgs/nixpkgs-unstable";
     home-manager = {
-    	url = "github:nix-community/home-manager";
+    	url = "github:nix-community/home-manager/release-24.11";
     	inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
@@ -30,7 +30,7 @@
             (import ./nixos)
 
 	    ({ ... }: {
-	      nix.extraOptions = "expermimental-features = nix-command flakes";
+	      nix.extraOptions = "experimental-features = nix-command flakes";
 	    })
 	    
             home-manager.nixosModules.home-manager
