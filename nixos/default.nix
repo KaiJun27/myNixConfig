@@ -101,6 +101,7 @@
   curl
   git
   ripgrep
+  terminator
   wget
   ];
 
