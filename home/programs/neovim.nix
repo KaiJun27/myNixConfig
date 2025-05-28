@@ -19,7 +19,8 @@
 	let g:airline_powerline_fonts = 1
       '';
       }
-
+      coc-nvim
+      coc-pyright
     ];
     extraConfig = ''
       set number relativenumber
