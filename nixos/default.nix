@@ -61,7 +61,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -97,10 +97,15 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  brave
   curl
   git
   ripgrep
   wget
+  ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
