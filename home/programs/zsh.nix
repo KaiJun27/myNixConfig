@@ -62,7 +62,16 @@
      };
      git_status = {
       style = "bg:#394260";
-      format = "[[($all_status$ahead$ahead_count$behind$behind_count$diverged$up_to_date )](fg:#769ff0 bg:#394260)]($style)";
+      format = "[[($all_status$ahead_behind)](fg:#769ff0 bg:#394260)]($style)";
+      conflicted = "=$count";
+      ahead = "⇡$count";
+      behind = "⇣$count";
+      untracked = "?$count";
+      stashed = "\$$count";
+      modified = "!$count";
+      staged = "+$count";
+      renamed = "»$count";
+      deleted = "✘$count";
      };
      nodejs = {
       symbol = "";
