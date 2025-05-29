@@ -10,6 +10,9 @@
       update = "sudo nixos-rebuild switch --flake /home/user/config";
       e = "$EDITOR";
       edit = "sudo -e";
+      open = "nohup dolphin . > /dev/null 2>&1 &";
+      pdf = "nohup okular $(fzf) > /dev/null 2>&1";
+      nshell = "nix-shell --command zsh";
     };
 
     autosuggestion = {
