@@ -7,7 +7,7 @@
 
     shellAliases = {
       ll = "ls -al";
-      update = "sudo nixos-rebuild switch --flake /home/user/config";
+      update = "sudo nixos-rebuild switch --flake /home/user/myNixConfig";
       e = "$EDITOR";
       edit = "sudo -e";
       open = "nohup dolphin . > /dev/null 2>&1 &";
