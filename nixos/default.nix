@@ -90,10 +90,10 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+
+  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -102,9 +102,15 @@
   brave
   curl
   git
+  gradle
+  jdk21
+  obsidian
+  python314
   ripgrep
+  rustup
   terminator
   wget
+  wl-clipboard
   ];
 
   fonts.packages = with pkgs; [

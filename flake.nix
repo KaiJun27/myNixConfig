@@ -28,6 +28,7 @@
           system = "x86_64-linux";
           modules = [
             (import ./nixos)
+            (import ./pentest)
 
 	    ({ ... }: {
 	      nix.extraOptions = "experimental-features = nix-command flakes";
