@@ -6,8 +6,9 @@
     vimAlias = true;
     defaultEditor = true;
     extraPackages = with pkgs; [
+      nil
+      clang-tools
       nodejs_24
-      wl-clipboard
     ];
     plugins = with pkgs.vimPlugins; [
       vim-airline
@@ -19,6 +20,12 @@
 	let g:airline_powerline_fonts = 1
       '';
       }
+
+      vim-nix
+      rust-vim
+
+
+      coc-java
       coc-nvim
       coc-pyright
     ];
@@ -27,5 +34,6 @@
       set sw=2
       set clipboard+=unnamedplus
     '';
+    withNodeJs = true;
     };
 }
